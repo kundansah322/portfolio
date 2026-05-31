@@ -6,18 +6,15 @@
 }
 
 body{
-  background:#f8fafc;
-  color:#0f172a;
+  background:#fefefe;
+  color:#222;
 }
 
-/* NAVBAR */
+/* NAV */
 header{
   position:fixed;
   width:100%;
-  top:0;
-  left:0;
-  background:rgba(15,23,42,0.95);
-  backdrop-filter:blur(10px);
+  background:linear-gradient(90deg,#ff6a00,#ee0979,#00c9ff);
   z-index:1000;
 }
 
@@ -29,19 +26,17 @@ nav{
 }
 
 .logo{
+  color:white;
   font-size:22px;
   font-weight:700;
-  color:white;
 }
 
-.logo span{
-  color:#ff4d6d;
-}
+.logo span{ color:#ffe600; }
 
 nav ul{
   display:flex;
-  gap:25px;
   list-style:none;
+  gap:20px;
 }
 
 nav a{
@@ -52,7 +47,7 @@ nav a{
 }
 
 nav a:hover{
-  color:#ff4d6d;
+  color:#ffe600;
 }
 
 /* HERO */
@@ -62,18 +57,28 @@ nav a:hover{
   align-items:center;
   justify-content:center;
   text-align:center;
-  background:linear-gradient(135deg,#6c63ff,#ff4d6d);
-  color:white;
-  padding:20px;
+  background:linear-gradient(135deg,#ff9a9e,#fad0c4,#a1c4fd,#c2e9fb);
+  background-size:400% 400%;
+  animation: gradient 8s ease infinite;
 }
 
-.hero h1{
+@keyframes gradient{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+.hero-box h1{
   font-size:3rem;
 }
 
-.hero h2{
-  font-weight:400;
+.hero-box span{
+  color:#ff006e;
+}
+
+.hero-box p{
   margin-top:10px;
+  font-size:1.2rem;
 }
 
 .btn{
@@ -81,8 +86,8 @@ nav a:hover{
   margin-top:20px;
   padding:12px 25px;
   background:white;
-  color:#6c63ff;
-  border-radius:25px;
+  color:#ff006e;
+  border-radius:30px;
   text-decoration:none;
   font-weight:600;
 }
@@ -91,54 +96,72 @@ nav a:hover{
 section{
   padding:80px 20px;
   text-align:center;
-  margin-top:60px;
 }
 
 .title{
   font-size:2.5rem;
-  margin-bottom:20px;
 }
 
 .title span{
-  color:#ff4d6d;
+  color:#ff006e;
 }
 
-/* GRID CARDS */
+/* GRID */
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
   gap:20px;
   margin-top:30px;
 }
 
+/* CARDS MULTI COLOR */
 .card{
-  background:white;
   padding:20px;
   border-radius:15px;
-  box-shadow:0 10px 20px rgba(0,0,0,0.1);
+  color:white;
+  font-weight:500;
   transition:0.3s;
+  box-shadow:0 10px 20px rgba(0,0,0,0.1);
 }
 
 .card:hover{
-  transform:translateY(-5px);
+  transform:translateY(-8px);
 }
 
-/* PROJECT */
-.project{
-  text-align:left;
+/* SKILL COLORS */
+.c1{background:linear-gradient(135deg,#ff512f,#dd2476);}
+.c2{background:linear-gradient(135deg,#24c6dc,#514a9d);}
+.c3{background:linear-gradient(135deg,#f7971e,#ffd200);}
+.c4{background:linear-gradient(135deg,#56ab2f,#a8e063);}
+
+/* PROJECT COLORS */
+.p1{background:linear-gradient(135deg,#667eea,#764ba2);}
+.p2{background:linear-gradient(135deg,#f7971e,#ff6a00);}
+.p3{background:linear-gradient(135deg,#00c9ff,#92fe9d);}
+.p4{background:linear-gradient(135deg,#ee0979,#ff6a00);}
+
+/* ABOUT */
+.about-box{
+  background:linear-gradient(135deg,#a18cd1,#fbc2eb);
+  padding:25px;
+  border-radius:15px;
+  color:white;
+  max-width:700px;
+  margin:auto;
 }
 
 /* CONTACT */
-.contact-box{
-  background:white;
+.contact{
+  background:linear-gradient(135deg,#00c9ff,#92fe9d);
   padding:20px;
-  border-radius:10px;
-  font-weight:500;
+  border-radius:15px;
+  color:white;
+  font-weight:600;
 }
 
 /* FOOTER */
 footer{
-  background:#0f172a;
+  background:linear-gradient(90deg,#ff6a00,#ee0979,#00c9ff);
   color:white;
   text-align:center;
   padding:20px;
