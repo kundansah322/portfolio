@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Kundan Sah | Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
 
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
 
+<header>
 <nav>
 <h2>Kundan Sah</h2>
 
@@ -24,12 +24,26 @@
 <li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
+</header>
 
-<section id="home">
+<section id="home" class="hero">
 
-<h1>Hi, I'm Kundan Sah</h1>
+<div class="hero-text">
+<h1>Kundan Sah</h1>
 
-<p>Web Developer | Data Science Learner</p>
+<h3>Web Developer | Data Science Learner</h3>
+
+<p>B.Tech CSE Student passionate about coding, AI and building modern web applications.</p>
+
+<a href="#projects" class="btn">View Projects</a>
+
+<a href="resume.pdf" class="btn2">Download Resume</a>
+
+</div>
+
+<div class="hero-img">
+<img src="images/profile.jpg" alt="">
+</div>
 
 </section>
 
@@ -38,8 +52,9 @@
 <h2>About Me</h2>
 
 <p>
-B.Tech Student passionate about coding,
-web development and AI.
+I am a B.Tech Computer Science student interested in
+Web Development, Machine Learning, AI and Data Science.
+I enjoy creating clean user interfaces and solving real-world problems.
 </p>
 
 </section>
@@ -48,7 +63,17 @@ web development and AI.
 
 <h2>Skills</h2>
 
-<p>HTML CSS JavaScript Python SQL</p>
+<div class="skills-box">
+
+<div>HTML</div>
+<div>CSS</div>
+<div>JavaScript</div>
+<div>Python</div>
+<div>SQL</div>
+<div>Machine Learning</div>
+<div>Git/GitHub</div>
+
+</div>
 
 </section>
 
@@ -56,19 +81,63 @@ web development and AI.
 
 <h2>Projects</h2>
 
-<p>Portfolio Website</p>
+<div class="project-container">
 
-<p>Calculator App</p>
+<div class="card">
+<h3>AI Chatbot</h3>
+<p>AI chatbot assistant using Python.</p>
+</div>
+
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>Modern responsive portfolio website.</p>
+</div>
+
+<div class="card">
+<h3>Weather App</h3>
+<p>Live weather forecast using API.</p>
+</div>
+
+<div class="card">
+<h3>ML Predictor</h3>
+<p>Student performance prediction model.</p>
+</div>
+
+</div>
 
 </section>
 
 <section id="contact">
 
-<h2>Contact</h2>
+<h2>Contact Me</h2>
 
-<p>Email: kundansah322@gmail.com</p>
+<form action="https://formspree.io/f/mrejagee" method="POST">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+<div class="socials">
+
+<a href="https://github.com/kundansah322"><i class='bx bxl-github'></i></a>
+
+<a href="#"><i class='bx bxl-linkedin'></i></a>
+
+<a href="#"><i class='bx bxl-instagram'></i></a>
+
+<a href="#"><i class='bx bxl-facebook'></i></a>
+
+</div>
 
 </section>
+
+<script src="script.js"></script>
 
 </body>
 </html>
