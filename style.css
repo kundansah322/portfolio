@@ -433,4 +433,48 @@ body.dark .certificate-card{
 
 body.dark .certificate-info p{
     color:#ddd;
+}/* Hero Buttons */
+
+.hero-buttons{
+    display:flex;
+    gap:15px;
+    margin-top:25px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 28px;
+    background:#0077ff;
+    color:#fff;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+.btn-outline{
+    background:transparent;
+    border:2px solid #0077ff;
+    color:#0077ff;
+}
+
+.btn-outline:hover{
+    background:#0077ff;
+    color:#fff;
+}
+
+body.dark .btn-outline{
+    border-color:#00c3ff;
+    color:#00c3ff;
+}
+
+body.dark .btn-outline:hover{
+    background:#00c3ff;
+    color:#121212;
 }
