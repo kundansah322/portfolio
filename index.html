@@ -200,25 +200,44 @@ About <span>Me</span>
 
 <section id="contact">
 
-<h2 class="title">
-Contact <span>Me</span>
-</h2>
+    <h2 class="title">Contact <span>Me</span></h2>
 
-<div class="grid">
+    <div class="contact-container">
 
-<div class="contact">
-📧 kundansah322@gmail.com
-</div>
+        <div class="contact-info">
 
-<div class="contact">
-📱 +91 6287270044,+977 9812036365
-</div>
+            <div class="info-box">
+                <i class="fas fa-envelope"></i>
+                <span>kundansah322@gmail.com</span>
+            </div>
 
-<div class="contact">
-📍 Kathmandu, Nepal
-</div>
+            <div class="info-box">
+                <i class="fas fa-location-dot"></i>
+                <span>Kathmandu, Nepal</span>
+            </div>
 
-</div>
+        </div>
+
+        <form class="contact-form"
+        action="https://formspree.io/f/xxxxxxxx"
+        method="POST">
+
+            <input type="text" name="name" placeholder="Name" required>
+
+            <input type="email" name="email" placeholder="Email" required>
+
+            <textarea name="message" rows="6"
+            placeholder="Message" required></textarea>
+
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
 
 </section>
 <footer>
