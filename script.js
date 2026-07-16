@@ -58,37 +58,26 @@ updateClock();
 // WEATHER
 // ===============================
 
-// Replace YOUR_API_KEY with your OpenWeather API key
-
 const API_KEY = "YOUR_API_KEY";
 
 async function loadWeather() {
-
     const weather = document.getElementById("weather");
 
-    if (!weather) return;
-
     try {
-
-        const response = await fetch("https://api.open-meteo.com/v1/forecast?latitude=27.7172&longitude=85.3240&current_weather=true"
-
-);
+        const response = await fetch(
+            `https://api.openweathermap.org/data/2.5/weather?q=Kathmandu,np&units=metric&appid=${API_KEY}`
+        );
 
         const data = await response.json();
 
-        weather.innerHTML =
-            `🌤 ${data.name} | ${Math.round(data.main.temp)}°C | ${data.weather[0].main}`;
+        weather.innerHTML = `🌤 ${data.name} | ${Math.round(data.main.temp)}°C | ${data.weather[0].main}`;
 
-    } catch {
-
+    } catch (err) {
         weather.innerHTML = "Weather unavailable";
-
     }
-
 }
 
 loadWeather();
-
 
 // ===============================
 // ACTIVE NAVIGATION
