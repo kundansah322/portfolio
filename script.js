@@ -70,9 +70,9 @@ async function loadWeather() {
 
     try {
 
-        const response = await fetch(
-            `https://api.openweathermap.org/data/2.5/weather?q=Kathmandu&units=metric&appid=${API_KEY}`
-        );
+        const response = await fetch("https://api.open-meteo.com/v1/forecast?latitude=27.7172&longitude=85.3240&current_weather=true"
+
+);
 
         const data = await response.json();
 
