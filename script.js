@@ -58,7 +58,7 @@ updateClock();
 // WEATHER
 // ===============================
 
-const API_KEY = "YOUR_API_KEY";
+const API_KEY = "f25792103ccc5725a33d1c81f9c2961e";
 
 async function loadWeather() {
     const weather = document.getElementById("weather");
